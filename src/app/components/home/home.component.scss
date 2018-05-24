@@ -1,17 +1,21 @@
 .container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
 
-  background: url(../../../assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+    width: 100vw;
+    height: 100vh;
 
-  .title {
-    color: white;
-    margin:0;
-    padding:50px 20px;
-  }
+    background-color: #262626;
 
+    div {
+        flex: 1;
+
+        & > * {
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

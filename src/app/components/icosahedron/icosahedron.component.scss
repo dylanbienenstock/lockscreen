@@ -1,0 +1,9 @@
+$size: 67.5vmin;
+
+:host {
+    canvas {
+        cursor: pointer;
+        width: $size !important;
+        height: $size !important;
+    }
+}

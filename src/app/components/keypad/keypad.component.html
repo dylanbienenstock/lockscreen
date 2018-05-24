@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="key"
+    *ngFor="let key of keys; index as i"
+    (click)="keyPressed(key)"
+    [ngStyle]="{
+        backgroundColor: keyLit[i] ? 'rgba(255, 255, 255, 0.4)' : '',
+        transition: keyAnimated[i] ? 'background-color 400ms ease' : ''
+    }">
+        {{ key }}
+    </div>
+</div>

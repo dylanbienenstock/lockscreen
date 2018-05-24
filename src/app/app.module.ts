@@ -19,6 +19,8 @@ import { WebviewDirective } from './directives/webview.directive';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { IcosahedronComponent } from './components/icosahedron/icosahedron.component';
+import { KeypadComponent } from './components/keypad/keypad.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,7 +31,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    WebviewDirective
+    IcosahedronComponent,
+    WebviewDirective,
+    KeypadComponent
   ],
   imports: [
     BrowserModule,

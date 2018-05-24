@@ -1,0 +1,22 @@
+:host {
+    .container {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+
+        .key {
+            width: 9.5vw;
+            height: 9.5vw;
+            line-height: 9.5vw;
+
+            text-align: center;
+            color: white;
+            opacity: 0.3;
+            font-size: 4vw;
+            border-radius: 50%;
+
+            &:last-child {
+                grid-column: 2;
+            }
+        }
+    }
+}
